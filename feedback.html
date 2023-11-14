@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Feedback</title>
+        <meta name="author" content="crazymakibe">
+        <meta name="description" content="Feedback">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="main.css">
+        <link rel="icon" href="Restaurant_logo.jpeg" type="image/x-icon">
+    </head>
+    <body>
+        <header>
+            <h1>Feedback</h1>
+            <nav aria-level="primary">
+                <ul>
+                    <li><a href="index.html" target="_blank">Home</a></li>
+                    <li><a href="menu.html" target="_blank">Menu</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <form action="https://httpbin.org/get" method="get">
+                <fieldset>
+                    <legend>Let Us Know What You Think of Us</legend>
+                    <div>
+                        <label for="firstName">First Name:</label>
+                        <input type="text" name="firstName" id="firstName" placeholder="Jane" autocomplete="on"
+                        required autofocus>
+                    </div>
+                    <div>
+                        <label for="lastName">Last Name:</label>
+                        <input type="text" name="lastName" id="lastName" placeholder="Doe" autocomplete="on"
+                        required>
+                    </div>
+                    <div>
+                        <label for="phone">Your Cell Ph No:</label>
+                        <input type="tel" name="phone" id="phone" placeholder="5555555555" 
+                        pattern="[0-9]{5}[0-9]{5}">
+                    </div>
+                    <div>
+                        <p>Do you want to receive updates on exciting offers through
+                        text messages?</p>
+                        <input type="radio" name="texts" id="yes" value="yes" checked>
+                        <label for="yes">Yes</label>
+                        <input type="radio" name="texts" id="no" value="no">
+                        <label for="no">No</label>
+                    </div>
+                    <div>
+                        <label for="email">Your Email Id:</label>
+                        <input type="text" name="email" id="email" placeholder="abcdefgh@ijklmn.opqrs">
+                    </div>
+                    <div>
+                        <p>Do you want to receive updates on exciting offers through
+                        email?</p>
+                        <input type="radio" name="emails" id="yes" value="yes" checked>
+                        <label for="yes">Yes</label>
+                        <input type="radio" name="emails" id="no" value="no">
+                        <label for="no">No</label>
+                    </div>
+                    <div>
+                        <label for="dish">What dish(es) did you like to most?</label>
+                        <br>
+                        <select name="dish" id="dish" multiple size="5">
+                            <optgroup label="Biryani">
+                                <option value="ChiBiryani">Chicken Biryani</option>
+                                <option value="ChiBiryaniSpecial">Chicken Biryani Special</option>
+                                <option value="MutBiryani" selected>Mutton Biryani</option>
+                                <option value="MutBiryaniSpecial">Mutton Biryani Special</option>
+                                <option value="AKBiryani">Abar Khabo Biryani</option>
+                                <option value="HydBiryani">Hyderabad Biryani</option>
+                                <option value="EggBiryani">Egg Biryani</option>
+                                <option value="BiryaniRice">Biryani Rice</option>
+                            </optgroup>
+                            <optgroup label="Rotis & Nan">
+                                <option value="AKBNan">Abar Khabo Nan</option>
+                                <option value="ChNan">Cheese Nan</option>
+                                <option value="ButNan">Butter Nan</option>
+                                <option value="KabNan">Kabuli Nan</option>
+                                <option value="LCPar">Lachcha Paratha</option>
+                                <option value="MasKulcha">Masala Kulcha</option>
+                                <option value="RumRoti">RUmali Roti</option>
+                                <option value="MasNan">Masala Nan</option>
+                            </optgroup>
+                            <optgroup label="Chicken">
+                                <option value="ChiAchari">Chicken Achari</option>
+                                <option value="ChiHaryali">Chicken Haryali Masala</option>
+                                <option value="ChiReshmi">Chicken Reshmi Butter Masala</option>
+                                <option value="ChiTikka">Chicken Tikka Masala</option>
+                            </optgroup>
+                            <optgroup label="Mutton">
+                                <option value="MutAKB">Mutton Abar Khabo Masala</option>
+                                <option value="MutBoti">Mutton Boti Masala</option>
+                                <option value="MutKakori">Mutton Kakori Masala</option>
+                                <option value="MutTikka">Mutton Tikka Masala</option>
+                            </optgroup>
+                        </select>
+                    </div>
+                    <div>
+                        <label for="message">Your Message:</label>
+                        <br>
+                        <textarea name="message" id="message" cols="30" rows="10"
+                        placeholder="Type your message here"></textarea>
+                    </div>
+                </fieldset>
+                <br>
+                <button type="submit">Submit</button>
+                <button type="reset">Reset</button>
+            </form>
+        </main>
+        <footer>
+            <nav>
+                <ul>
+                    <li><a href="#">Back to Top</a></li>
+                </ul>
+            </nav>
+            &copy;The Great Abar Khabo Restaurant Group Ltd.
+        </footer>
+    </body>
+</html>
